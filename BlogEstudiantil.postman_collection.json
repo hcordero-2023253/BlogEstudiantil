@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "2c8a7c96-09c9-49a9-8c67-8d2a398e382c",
+		"name": "BlogEstudiantil",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956978"
+	},
+	"item": [
+		{
+			"name": "Comments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "hcordero",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "QUE HAY",
+							"type": "text"
+						},
+						{
+							"key": "publicationId",
+							"value": "682027930cdc96064aeddf5e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/v1/api/saveComment",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"api",
+						"saveComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publications",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Hola",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "WAZAAAAAAAAAAAAAAAAAAAAAAAA",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "TAller",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/v1/api/addPublication",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"api",
+						"addPublication"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
