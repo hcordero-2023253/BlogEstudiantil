@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
-export const Button = ({ label, active, onClick }) => {
-    return (
-        <StyledButton>
-            
-        </StyledButton>
-    )
+export const Button = ({ children, onClick }) => {
+  return (
+      <StyledButton onClick={onClick}>
+        {children}
+      </StyledButton>
+  )
 }
 
 
@@ -16,16 +16,14 @@ const StyledButton = styled.button`
     font-size: 0.875rem;
     font-weight: 500;
     transition: background-color 0.2s;
-    color: ${({ theme, $active }) => $active ? 'white' : theme.color};color: ${({ theme, $active }) => $active ? 'white' : theme.color};
-    background-color: ${({theme})=>theme.bgd};
-    ${props => props.$active ? `
-    background-color: #a88f68;
-    color: white;
-  ` : `
+    color: #000000;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
     &:hover {
-      background-color: #a88f68;
+      background-color: #78fafe;
+      box-shadow: 0 4px 20px rgb(0, 0, 0);
     }
-  `}
 `
 
 
